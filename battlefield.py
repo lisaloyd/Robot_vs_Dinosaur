@@ -8,9 +8,8 @@ def __init__(self):
 
 def run_game(self):
     dinosaur = Dinosaur('Killer', '', '30')
-    dinosaur.self.name = ('Killer')
-    dinosaur.self.health = 
-    dinosaur.self.set_attack = ('30')
+    robot = Robot('The Judge','', '' )
+    print(robot.active_weapon)
 
 def display_welcome(self):
     print('\nWelcome to Dinosaurs vs Robots!\nOnly one can win!')
