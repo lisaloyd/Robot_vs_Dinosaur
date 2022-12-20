@@ -9,9 +9,8 @@ class Robot:
         
     def attack(self, dinosaur): 
         if self.is_alive():
-            dinosaur.health = self.active_weapon.attack_power
+            dinosaur.health -= self.active_weapon.attack_power
             
-
 
     def is_alive(self):
         return self.health > 0

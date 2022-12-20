@@ -7,7 +7,7 @@ class Dinosaur:
 
     def attack(self, robot): 
         if self.is_alive():
-            robot.health = self.attack_power
+            robot.health -= self.attack_power
             
 
 
@@ -15,6 +15,4 @@ class Dinosaur:
         return self.health > 0
 
    
-#    def attack(self, dinosaur): 
-#         if self.is_alive():
-#             dinosaur.health = self.active_weapon.attack_power
+#    

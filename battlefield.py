@@ -4,7 +4,7 @@ from robot import Robot
 class Battlefield:
 
     def __init__(self):
-        self.dinosaur = Dinosaur('Dinosaur The Killer', '30')
+        self.dinosaur = Dinosaur('Dinosaur The Killer', 30)
         self.robot = Robot('Robot The Judge', 'sword')
         
 
@@ -17,7 +17,7 @@ class Battlefield:
         print('\nWelcome to Dinosaurs vs Robots!\nOnly one can win!')
 
     def battle_phase(self):
-        if self.dinosaur.is_alive and self.robot.is_alive():
+        while self.dinosaur.is_alive() and self.robot.is_alive():
             self.dinosaur.attack(self.robot)
             self.robot.attack(self.dinosaur)
 
