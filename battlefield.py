@@ -18,9 +18,12 @@ def battle_phase(self):
         self.dinosaur.attack(self.robot)
         self.robot.attack(self.dinosaur)
 
-        
+
 def display_winner(self):
-    pass
+    if self.dinosaur.is_alive():
+        print(f'{Dinosaur} is the winner!')
+    else:
+        print(f'{Robot} is the winner!')
 
 
 # class Robot:
