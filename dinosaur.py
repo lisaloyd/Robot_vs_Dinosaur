@@ -6,5 +6,8 @@ class Dinosaur:
 
 
     def set_attack(self, robot): 
-        pass
+        if self.is_alive():
+            return self.attack_power
+
+
         

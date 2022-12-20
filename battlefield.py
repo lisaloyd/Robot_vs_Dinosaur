@@ -9,7 +9,7 @@ def __init__(self):
 def run_game(self):
     dinosaur = Dinosaur('Killer', '', '30')
     robot = Robot('The Judge','', '' )
-    print(robot.active_weapon)
+    
 
 def display_welcome(self):
     print('\nWelcome to Dinosaurs vs Robots!\nOnly one can win!')
@@ -24,7 +24,7 @@ def display_winner(self):
 # class Robot:
 #     def __init__(self, name, health, active_weapon):
 #         self.name = name
-#         self.health = health
+#         self.health = 100
 #         self.active_weapon = Weapon("sword", 30)
 
         
