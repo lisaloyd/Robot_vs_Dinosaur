@@ -10,4 +10,5 @@ class Dinosaur:
             return self.attack_power
 
 
-        
+    def is_alive(self):
+        return self.health
