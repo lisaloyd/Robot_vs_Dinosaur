@@ -1,29 +1,32 @@
 from dinosaur import Dinosaur
 from robot import Robot
 
+class Battlefield:
 
-def __init__(self):
-    self.dinosaur = Dinosaur("Killer")
-    self.robot = Robot("The Judge")
+    def __init__(self):
+        self.dinosaur = Dinosaur('Dinosaur The Killer', '30')
+        self.robot = Robot('Robot The Judge', 'sword')
+        
 
-def run_game(self):
-    pass
+
+    def run_game(self):
+        pass
     
 
-def display_welcome(self):
-    print('\nWelcome to Dinosaurs vs Robots!\nOnly one can win!')
+    def display_welcome(self):
+        print('\nWelcome to Dinosaurs vs Robots!\nOnly one can win!')
 
-def battle_phase(self):
-   if self.dinosaur.is_alive and self.robot.is_alive():
-        self.dinosaur.attack(self.robot)
-        self.robot.attack(self.dinosaur)
+    def battle_phase(self):
+        if self.dinosaur.is_alive and self.robot.is_alive():
+            self.dinosaur.attack(self.robot)
+            self.robot.attack(self.dinosaur)
 
 
-def display_winner(self):
-    if self.dinosaur.is_alive():
-        print(f'{Dinosaur} is the winner!')
-    else:
-        print(f'{Robot} is the winner!')
+    def display_winner(self):
+        if self.dinosaur.is_alive():
+            print(f'{Dinosaur} is the winner!')
+        else:
+            print(f'{Robot} is the winner!')
 
 
 # class Robot:
