@@ -3,20 +3,22 @@ from robot import Robot
 
 
 def __init__(self):
-    pass
-
+    self.dinosaur = Dinosaur("Killer")
+    self.robot = Robot("The Judge")
 
 def run_game(self):
-    dinosaur = Dinosaur('Killer', '', '30')
-    robot = Robot('The Judge','', '' )
+    pass
     
 
 def display_welcome(self):
     print('\nWelcome to Dinosaurs vs Robots!\nOnly one can win!')
 
 def battle_phase(self):
-    pass
+   if self.dinosaur.is_alive and self.robot.is_alive():
+        self.dinosaur.attack(self.robot)
+        self.robot.attack(self.dinosaur)
 
+        
 def display_winner(self):
     pass
 
