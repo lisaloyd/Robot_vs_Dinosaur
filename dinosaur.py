@@ -10,9 +10,7 @@ class Dinosaur:
             robot.health -= self.attack_power
             
 
-
     def is_alive(self):
         return self.health > 0
 
    
-#    
