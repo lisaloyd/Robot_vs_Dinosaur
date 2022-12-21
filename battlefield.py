@@ -6,11 +6,11 @@ class Battlefield:
     def __init__(self):
         self.dinosaur = Dinosaur('Dinosaur The Killer', 30)
         self.robot = Robot('Robot The Judge', 'sword')
-        run_game = self.dinosaur.attack(self.robot) and self.robot.attack(self.dinosaur)
+        run_game = True
 
 
     def run_game(self):
-        run_game = True
+        run_game = self.dinosaur.attack(self.robot) and self.robot.attack(self.dinosaur)
     
 
     def display_welcome(self):
